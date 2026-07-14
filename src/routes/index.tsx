@@ -65,7 +65,7 @@ function Index() {
   const remaining = todos.filter((t) => !t.completed).length;
 
   return (
-    <main className="min-h-screen bg-red-600 px-4 py-16">
+    <main className="min-h-screen bg-blue-600 px-4 py-16">
       <div className="mx-auto w-full max-w-xl">
         <header className="mb-8 text-center">
           <h1 className="text-4xl font-bold tracking-tight text-foreground">Minhas Tarefas</h1>
