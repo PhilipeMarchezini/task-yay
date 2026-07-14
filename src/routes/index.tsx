@@ -65,7 +65,7 @@ function Index() {
   const remaining = todos.filter((t) => !t.completed).length;
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-background via-background to-accent/40 px-4 py-16">
+    <main className="min-h-screen bg-red-600 px-4 py-16">
       <div className="mx-auto w-full max-w-xl">
         <header className="mb-8 text-center">
           <h1 className="text-4xl font-bold tracking-tight text-foreground">Minhas Tarefas</h1>
@@ -116,10 +116,10 @@ function Index() {
               </span>
               <button
                 onClick={() => remove(todo.id)}
-                className="text-muted-foreground opacity-0 transition hover:text-destructive group-hover:opacity-100"
-                aria-label="Excluir tarefa"
+                className="inline-flex items-center gap-1 rounded-md px-2 py-1 text-sm font-medium text-white/90 opacity-0 transition hover:bg-white/20 hover:text-white group-hover:opacity-100"
+                aria-label="Excluir anotação"
               >
-                <Trash2 className="h-4 w-4" />
+                <Trash2 className="h-4 w-4" /> Excluir
               </button>
             </li>
           ))}
